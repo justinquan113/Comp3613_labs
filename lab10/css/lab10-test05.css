@@ -1,0 +1,155 @@
+
+  body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+  }
+  
+  .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+  }
+  
+  .header {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      color: white;
+      padding: 30px;
+      text-align: center;
+  }
+  
+  .header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .header p {
+      margin: 0;
+      font-size: 1.2em;
+      opacity: 0.9;
+  }
+  
+  .controls {
+      padding: 30px;
+      background: #f8f9fa;
+      border-bottom: 1px solid #e9ecef;
+  }
+  
+  .control-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+  }
+  
+  .control-group label {
+      font-weight: 600;
+      color: #333;
+      font-size: 16px;
+  }
+  
+  #dataSelector {
+      padding: 12px 20px;
+      border: 2px solid #ddd;
+      border-radius: 25px;
+      background: white;
+      font-size: 16px;
+      min-width: 250px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  #dataSelector:hover {
+      border-color: #4facfe;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+  }
+  
+  #dataSelector:focus {
+      outline: none;
+      border-color: #4facfe;
+      box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+  }
+  
+  .chart-container {
+      padding: 30px;
+
+  }
+  
+  #pieChart {
+      width: 100%;
+      height: 500px;
+
+  }
+  
+  .data-info {
+      margin-top: 20px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      border-left: 4px solid #4facfe;
+  }
+  
+  .data-info h3 {
+      margin: 0 0 10px 0;
+      color: #333;
+      font-size: 18px;
+  }
+  
+  .data-info p {
+      margin: 0;
+      color: #666;
+      line-height: 1.5;
+  }
+  
+  .loading {
+      text-align: center;
+      color: #666;
+      padding: 100px 20px;
+      font-size: 18px;
+  }
+  
+  .loading::after {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #4facfe;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-left: 10px;
+  }
+  
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+      .header h1 {
+          font-size: 2em;
+      }
+      
+      .control-group {
+          flex-direction: column;
+          text-align: center;
+      }
+      
+      #dataSelector {
+          min-width: 200px;
+      }
+      
+      #pieChart {
+          height: 400px;
+      }
+  }
+

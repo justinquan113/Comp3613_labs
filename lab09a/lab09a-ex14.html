@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+   <title>Lab09</title>		   
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script type="text/javascript" language="javascript" src="js/paintings.js"></script>
+   <script type="text/javascript" language="javascript" src="js/lab09a-ex14.js"></script>   
+
+</head>
+<body class="font-serif font-bold m-6 bg-gray-100">
+   <main>
+   <header class="text-gray-500 mb-2">
+      <h1 class="font-sans font-black text-3xl ">Template Alternative</h1>
+      <p class="italic ">Using Tailwind CSS with normal DOM techniques is too painful. This uses template technique instead.</p> 
+   </header>  
+
+<section id="parent" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 bg-gray-100">
+
+  <!-- Painting Card Start -->
+  <div class="bg-white rounded-lg shadow-lg border overflow-hidden">
+    <img class="w-full h-48 object-cover" src="https://placehold.co/300x200" alt="Painting Image">
+    <div class="p-4">
+      <h2 class="text-lg italic bold text-gray-800 font-sans">Starry Night </h2>
+      <h3 class="text-gray-600 text-base mt-1 font-sans">Vincent van Gogh (1889)</h3>
+      <h4 class="text-gray-600 italic text-base mt-0 font-sans">National Gallery (London)</h4>
+      <p class="text-gray-500 text-sm">The painting is a small full-length double portrait, which is believed to represent the Italian merchant Giovanni di Nicolao Arnolfini and possibly his wife, presumably in their home in the Flemish city of Bruges.</p>
+      <div class="mt-4">
+        <button class="w-full px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded hover:bg-blue-600 font-sans">
+          View
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Painting Card End -->
+
+</section>
+
+    </main>
+
+
+
+  
+      
+</body>
+</html>

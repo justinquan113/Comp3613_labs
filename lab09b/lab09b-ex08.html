@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 9</title>
+   <link rel="stylesheet" href="css/lab09b-ex08.css">
+   <script src="js/paintings.js"></script> 
+   <script src="js/lab09b-ex08.js"></script> 
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Image Gallery</h1>
+            <p>Click on any image to view it in full size</p>
+        </div>
+
+        
+        <template id="templateItem">
+            <div class="gallery-item" data-index="">
+                <img src="" alt="">
+                <div class="expand-icon">🔍</div>
+                <div class="gallery-overlay">
+                    <div class="gallery-title"></div>
+                    <div class="gallery-description"></div>
+                </div>
+            </div>            
+        </template>
+
+        <div class="gallery"></div>
+    </div>
+
+    <dialog id="imageDialog" aria-labelledby="dialog-title">
+        <div class="dialog-content">
+            <button class="dialog-close" aria-label="Close dialog">×</button>
+            <img id="dialogImage" src="" alt="" class="dialog-image">
+            <div class="dialog-info">
+                <div id="dialogTitle" class="dialog-title"></div>
+                <div id="dialogDescription" class="dialog-description"></div>
+            </div>
+        </div>
+    </dialog>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 9</title>
+   <link rel="stylesheet" href="css/lab09b-ex06.css">
+   <script src="js/lab09b-ex06.js"></script> 
+</head>
+<body>
+<button id="opnBtn" class="trigger-btn">
+      Open Dialog
+</button>
+
+<dialog id="myDialog" >
+    <form method="dialog">
+        <div class="dialog-header">
+            <h2 class="dialog-title" id="dialog-title">Confirmation Required</h2>
+            <p class="dialog-subtitle">The dialog element has made this type of interaction easy!</p>
+            <button id="closeBtn" class="close-btn" type="button">
+                ✕
+            </button>
+        </div>
+        
+        <div class="dialog-content">
+            <p class="dialog-text" id="dialog-text">
+                Delete this lab exercise?
+            </p>
+            
+            <div class="dialog-actions">
+                <button value="no" class="btn btn-secondary">
+                    No
+                </button>
+                <button value="yes" class="btn btn-primary">
+                    Yes
+                </button>
+            </div>
+        </div>
+    </form>    
+</dialog> 
+</body>
+</html>

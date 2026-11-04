@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 9</title>
+   <link rel="stylesheet" href="css/lab09b-ex07.css">
+   <script src="js/lab09b-ex07.js"></script> 
+</head>
+<body>
+<button id="opnBtn" class="trigger-btn">
+      Open Dialog
+</button>
+
+    <dialog id="myDialog" >
+        <div class="dialog-header">
+            <h2 class="dialog-title" id="dialog-title">Welcome!</h2>
+            <p class="dialog-subtitle" id="dialog-subtitle">Please enter your information below</p>
+            <button id="closeBtn" class="close-btn" >
+                ✕
+            </button>
+        </div>
+        
+        <div class="dialog-content">
+
+            <form id="userForm" method="dialog">
+                <div class="input-group">
+                    <label for="userName" class="input-label">Full Name</label>
+                    <input type="text" id="userName" name="userName" 
+                        class="input-field" placeholder="Enter your full name" required>
+                    <div class="input-helper">This will be used to personalize your experience</div>
+                </div>
+
+            </form>
+
+            <p class="dialog-text" id="dialog-text">
+                The dialog element in HTML has made the creation of modal dialogs much easier!
+            </p>
+            
+            <div class="dialog-actions">
+                <button id="cancelBtn" value="cancel" class="btn btn-secondary">
+                    Cancel
+                </button>
+                <button id="confirmBtn" value="confirm" class="btn btn-primary">
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </dialog> 
+</body>
+</html>

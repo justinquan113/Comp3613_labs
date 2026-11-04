@@ -1,0 +1,75 @@
+[
+   {
+      "key": "programming",
+      "title": "Programming Languages Popularity",
+      "description": "Survey results from 100,000+ developers showing the most popular programming languages in 2024.",
+      "data": [
+         ["Language", "Popularity %"],
+         ["JavaScript", 28.5],
+         ["Python", 25.2],
+         ["Java", 18.7],
+         ["TypeScript", 12.1],
+         ["C#", 8.3],
+         ["Go", 4.2],
+         ["Rust", 3.0]
+      ],
+      "colors": ["#582A72", "#3D1255", "#882D61", "#2ecc71", "#7B9F35", "#661141", "#808015", "440027"]
+   },
+   {
+      "key": "browsers",
+      "title": "Web Browsers Market Share",
+      "description": "Global web browser usage statistics based on millions of page views worldwide.",
+      "data": [
+         ["Browser", "Market Share %"],
+         ["Chrome", 65.2],
+         ["Safari", 18.8],
+         ["Edge", 4.3],
+         ["Firefox", 3.2],
+         ["Opera", 2.4],
+         ["Others", 6.1]
+      ],
+      "colors": ["#474744", "#777772", "#8f8f89", "#a7a7a0", "#bebeb6", "#d6d6cd"]
+   },
+   {
+      "key": "social",
+      "title": "Social Media Platforms Usage",
+      "description": "Monthly active users distribution across major social media platforms.",
+      "data": [
+         ["Platform", "Users (Billions)"],
+         ["Facebook", 2.9],
+         ["YouTube", 2.7],
+         ["WhatsApp", 2.0],
+         ["Instagram", 1.4],
+         ["TikTok", 1.0],
+         ["Twitter/X", 0.4],
+         ["Others", 1.2]
+      ],
+      "colors": ["#1877f2", "#ff0000", "#25d366", "#e4405f", "#000000", "#1da1f2", "#95a5a6"]
+   },
+   {
+      "key": "devices",
+      "title": "Device Types for Web Access",
+      "description": "How users access websites across different device categories.",
+      "data": [
+         ["Device", "Usage %"],
+         ["Mobile", 54.8],
+         ["Desktop", 42.7],
+         ["Tablet", 2.5]
+      ],
+      "colors": ["#e0440e", "#e6693e", "#ec8f6e", "#f3b49f", "#f6c7b6"]
+   },
+   {
+      "key": "regions",
+      "title": "Sales Performance by Region",
+      "description": "Q4 2024 sales distribution across global markets showing regional performance.",
+      "data": [
+         ["Region", "Sales ($M)"],
+         ["North America", 45.2],
+         ["Europe", 38.7],
+         ["Asia Pacific", 52.1],
+         ["Latin America", 18.3],
+         ["Middle East & Africa", 12.4]
+      ],
+      "colors": ["#1e81b0", "#873e23", "#e28743", "#eab676", "#76b5c5"]
+   }
+]

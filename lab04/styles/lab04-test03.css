@@ -1,0 +1,133 @@
+/* add styles here */
+h1{
+    font-weight: 500;
+    text-align: center;
+    color: deeppink;
+}
+
+#colors{
+    text-align: center;
+    margin-top: 70px;
+  
+
+}
+
+#colors div{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+}
+
+span{
+    border-radius: 50%;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+    
+
+}
+
+.color1{
+    background-color: #f62f5e;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.color2{
+    background-color: #f1ad3d;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color3{
+    background-color: #6ebdca;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color4{
+    background-color: #eefc91;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color5{
+    background-color: #F7ECEB;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#typography{
+    margin-top: 5rem;
+}
+
+#typography div {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#typography div > :first-child{
+    margin-bottom: 0;
+}
+
+
+
+
+.details{
+    font-size: 16px;
+    font-style: italic;
+    color: silver;
+    margin-top: 0;
+
+}
+
+h2{
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 36px;
+    
+}
+
+h3{
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h4{
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.bodytext{
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.asidetext{
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+}

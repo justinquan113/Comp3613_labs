@@ -1,0 +1,38 @@
+<html>
+<head>
+
+   <link rel="stylesheet" href="css/lab10-test05.css">
+   <script src="js/lab10-test05.js"></script>
+</head>
+
+<body >
+
+    <div class="container">
+        <div class="header">
+            <h1>Interactive Data Visualization</h1>
+            <p>Select different datasets to explore various metrics</p>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="dataSelector">Choose Dataset:</label>
+                <select id="dataSelector" >
+                </select>
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <div id="pieChart" >
+                <div class="loading">Loading chart data...</div>
+            </div>
+            
+            <div class="data-info" id="dataInfo">
+                <h3 id="infoTitle"></h3>
+                <p id="infoDescription"></p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

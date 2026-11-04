@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 9</title>
+   <link rel="stylesheet" href="css/lab09b-ex10.css">
+   <script src="js/lab09b-ex10.js"></script> 
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Upload Images</h1>
+        <p class="subtitle">Drag and drop your images or click to browse</p>
+        
+        <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">📸</div>
+            <div class="upload-text">Drop your images here</div>
+            <div class="upload-subtext">Supports: JPG, JPEG, PNG, GIF, WEBP</div>
+        </div>
+        
+        <input type="file" class="file-input" id="fileInput" accept="image/*" multiple>
+        <button class="upload-btn" id="btnChoose">
+            Choose File
+        </button>
+        
+        <div id="previewContainer" class="file-preview">
+            <img class="preview-image" id="imgPreview" />
+            <button class="upload-btn" id="btnUpload">
+                  Upload (doesn't do anything)
+            </button>            
+        </div>
+       
+    </div>
+     
+</body>
+</html>

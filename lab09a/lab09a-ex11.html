@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>  
+    <title>Lab 9</title>   
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">    
+    <link rel="stylesheet" href="css/lab09a-ex11.css">
+    <script src="js/lab09a-ex11.js"></script> 
+</head>
+<body >
+<main class="container">
+   <h1>Event Delegation Using Class Names</h1>
+   <p class="description">Click on any box below. There is only a single event listener on the container to handle all box clicks!</p>
+   
+   <div class="controls">
+      <select>
+         <option value="0">Choose a color to add a box</option>
+         <option value="red">red</option>
+         <option value="blue">blue</option>
+         <option value="pink">pink</option>
+         <option value="teal">teal</option>
+         <option value="orange">orange</option>
+         <option value="green">green</option>
+      </select>
+      <button class="btn" id="btnClear">Clear Log</button>
+   </div>
+
+   <div class="color-container" id="boxContainer1">
+      <div class="box red-box" data-color="red">red</div>
+      <div class="box blue-box" data-color="blue">blue</div>
+      <div class="box yellow-box" data-color="yellow">yellow</div>
+      <div class="box teal-box" data-color="teal">teal</div>      
+   </div>
+   <div class="color-container" id="boxContainer2">
+      <div class="box orange-box" data-color="orange">orange</div>
+      <div class="box green-box" data-color="green">green</div>
+      <div class="box pink-box" data-color="pink">pink</div>
+      <div class="box purple-box" data-color="purple">purple</div>
+   </div>   
+
+   <h3>Event Log:</h3>
+   <div class="event-log" id="eventLog">
+      <div class="log-entry">
+            <span class="event-type">Pretend Console</span> 
+            Event delegation is active. Click any box to see it in action!
+      </div>
+   </div>
+
+</main>
+
+</body>
+</html>

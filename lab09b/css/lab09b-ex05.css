@@ -1,0 +1,253 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   min-height: 100vh;
+   padding: 20px;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 40px 20px;
+}
+
+.header {
+   text-align: center;
+   margin-bottom: 60px;
+   color: white;
+}
+
+.header h1 {
+   font-size: 3rem;
+   font-weight: 700;
+   margin-bottom: 10px;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header p {
+   font-size: 1.2rem;
+   opacity: 0.9;
+}
+
+.products-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   gap: 30px;
+   padding: 0 10px;
+}
+
+.product-card {
+   background: rgba(255, 255, 255, 0.95);
+   backdrop-filter: blur(10px);
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.product-card:hover {
+   transform: translateY(-10px) scale(1.02);
+   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+   width: 100%;
+   height: 250px;
+   background: linear-gradient(45deg, #ff6b6b, #feca57);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   overflow: hidden;
+}
+
+.product-card:nth-child(2) .product-image {
+   background: linear-gradient(45deg, #48cae4, #023e8a);
+}
+
+.product-card:nth-child(3) .product-image {
+   background: linear-gradient(45deg, #06ffa5, #4d7c0f);
+}
+
+.product-image::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 60px;
+   height: 60px;
+   background: rgba(255, 255, 255, 0.3);
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   transition: all 0.3s ease;
+}
+
+.product-card:hover .product-image::before {
+   width: 80px;
+   height: 80px;
+   background: rgba(255, 255, 255, 0.4);
+}
+
+.product-image span {
+   font-size: 2rem;
+   color: white;
+   z-index: 1;
+   position: relative;
+}
+
+.product-info {
+   padding: 30px;
+}
+
+.product-title {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: #2d3748;
+   margin-bottom: 12px;
+}
+
+.product-price {
+   font-size: 1.8rem;
+   font-weight: 700;
+   color: #667eea;
+   margin-bottom: 15px;
+}
+
+.product-description {
+   color: #718096;
+   line-height: 1.6;
+   margin-bottom: 25px;
+   font-size: 0.95rem;
+}
+
+.add-to-cart-btn {
+   width: 100%;
+   padding: 15px;
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   color: white;
+   border: none;
+   border-radius: 12px;
+   font-size: 1.1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   position: relative;
+   overflow: hidden;
+}
+
+.add-to-cart-btn::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+   transition: left 0.5s;
+}
+
+.add-to-cart-btn:hover::before {
+   left: 100%;
+}
+
+.add-to-cart-btn:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.add-to-cart-btn:active {
+   transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+   .header h1 {
+         font-size: 2.5rem;
+   }
+   
+   .products-grid {
+         grid-template-columns: 1fr;
+         gap: 20px;
+   }
+   
+   .container {
+         padding: 20px 10px;
+   }
+}
+
+/* Add some animation on load */
+.product-card {
+   opacity: 0;
+   animation: fadeInUp 0.6s ease forwards;
+}
+
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+   from {
+         opacity: 0;
+         transform: translateY(30px);
+   }
+   to {
+         opacity: 1;
+         transform: translateY(0);
+   }
+}
+
+
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);  
+  color: #fff; 
+  text-align: center; 
+  border-radius: 12px; /* Rounded borders */
+  padding: 16px; 
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; 
+  left: 50%; /* Center the snackbar */
+  top: 40px; /* 40px from the top */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 40px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 40px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 40px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 40px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+

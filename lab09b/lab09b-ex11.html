@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>  
+    <title>Lab 9</title>    
+    <link rel="stylesheet" type="text/css" href="css/lab09b-ex11.css" />
+    
+   <script type="text/javascript" language="javascript" src="js/lab09b-ex11.js"></script>
+</head>
+<body >
+<div class="container">
+        <div class="product-grid">
+            <div class="image-section">
+               <img src="images/shirt-blue.png" alt="Premium Cotton T-Shirt" class="product-image" id="productImage"  />                
+            </div>
+            
+            <div class="details-section">
+                <div>
+                    <h1 class="product-title">Filter Tee</h1>
+                    <p class="product-subtitle">Using CSS Filters to modify images</p>
+                    <div class="price" id="productPrice">$29.99</div>
+                    
+                    <div class="selection-group">
+                        <label class="selection-label">Color</label>
+                        <div class="colorOptions" id="colorOptions">
+                            <div class="color-option" data-color="#6094bb" data-hue="0" style="background: #6094bb;" title="Blue Mist"></div>
+                            <div class="color-option" data-color="#9777c4" data-hue="60" style="background: #9777c4;" title="Lilac Rain"></div>
+                            <div class="color-option" data-color="#cb7883" data-hue="140" style="background: #cb7883;" title="Salmon Peach"></div>
+                            <div class="color-option" data-color="#7e9c52" data-hue="240" style="background: #7e9c52;" title="Lime Green"></div>
+                        </div>
+                    </div>
+
+                    <div class="selection-group">
+                        <label class="selection-label">Size</label>
+                        <select class="size-select" id="sizeSelect">
+                            <option value="XS">XS - Extra Small</option>
+                            <option value="S">S - Small</option>
+                            <option value="M" selected>M - Medium</option>
+                            <option value="L">L - Large</option>
+                            <option value="XL">XL - Extra Large</option>
+                            <option value="XXL">XXL - Double Extra Large</option>
+                        </select>
+                    </div>                    
+                    
+                    <div class="selection-group">
+                        <label class="selection-label">Tone</label>
+                        <div class="toneOptions" id="toneOptions">                            
+                            <div class="tone-option" data-tone="50">Muted</div>
+                            <div class="tone-option selected" data-tone="75">Normal</div>
+                            <div class="tone-option" data-tone="100">Bold</div>                           
+                        </div>
+                    </div>
+                    
+                    <div class="quantity-selector">
+                        <span class="quantity-label">Quantity:</span>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn" id="decreaseBtn">-</button>
+                            <input type="number" class="quantity-input" id="quantityInput" value="1" min="1" max="10">
+                            <button class="quantity-btn" id="increaseBtn">+</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <button class="add-to-cart" id="addToCartBtn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+       
+</body>
+</html>

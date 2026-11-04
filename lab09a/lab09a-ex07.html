@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8"/>  
+    <title>Lab 9</title>   
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800" rel="stylesheet">    
+    <link rel="stylesheet" href="css/lab09a-ex07.css">
+    
+    <script src="js/lab09a-ex07.js"></script> 
+</head>
+<body>
+
+<main class="container">
+    <h1>More DOM Manipulation</h1>
+    <p>This example will demonstrate JavaScript's dynamic capabilities.</p>
+    <div class="collapsible">
+        <div class="collapsible-header" >
+            <h3>Calculate</h3>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="collapsible-content expanded">
+            <div class="content-inner">
+
+               <div class="quantity-selector">
+                  <span class="quantity-label">Price:</span>
+                  <div class="quantity-controls">
+                        <input type="number" class="quantity-input" id="numPrice" value="100.00" >
+                  </div>
+               </div>                
+               <div class="quantity-selector">
+                  <span class="quantity-label">Quantity:</span>
+                  <div class="quantity-controls">
+                        <button class="quantity-btn" id="decreaseBtn">-</button>
+                        <input type="number" class="quantity-input" id="numQuantity" value="0" min="0" max="10">
+                        <button class="quantity-btn" id="increaseBtn">+</button>
+                  </div>
+               </div>
+               <div class="quantity-selector">
+                  <span class="quantity-label">Tax Rate (%):</span>
+                  <div class="quantity-controls">
+                        <input type="number" class="quantity-input" id="numTax" value="5" >
+                  </div>
+               </div>   
+               <div class="totals-section">
+                  <div class="totals-grid">
+                     <div class="total-label">Subtotal:</div>
+                     <div class="total-amount subtotal" id="subtotal">$0.00</div>
+                     
+                     <div class="total-label">Tax:</div>
+                     <div class="total-amount tax-amount" id="taxAmount">$0.00</div>
+                     
+                     <div class="total-label grand-total">Grand Total:</div>
+                     <div class="total-amount grand-total" id="grandTotal">$0.00</div>
+                  </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+   
+</body>
+</html>
