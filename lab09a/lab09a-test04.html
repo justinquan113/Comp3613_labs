@@ -26,7 +26,15 @@
       <div class="todo hidden">
          <h2>To Do</h2>
          <hr>
-         <table id="taskTable"></table>
+         <table id="taskTable">
+            <template>
+               <tr>
+                  <td><button id="delete"></button></td>
+                  <td id="date"></td>
+                  <td id="task"></td>
+               </tr>
+            </template>
+         </table>
       </div>  
       <aside class="hidden">
          <button id="clearTable"><i class="fa fa-trash fa-fw"></i>Remove All</button>

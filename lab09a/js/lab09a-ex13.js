@@ -29,6 +29,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     /* code goes here */
+    document.querySelector("#sampleForm").
+        addEventListener("submit", checkforEmptyFields)
+
+    function checkforEmptyFields(e){
+        const errorList = []
+        for (let field of fields){
+            if(field.value == null || field.value == ""){
+                e.preventDefault()
+                errorList.push(field)
+            }
+        }
+       
 
 
 });
